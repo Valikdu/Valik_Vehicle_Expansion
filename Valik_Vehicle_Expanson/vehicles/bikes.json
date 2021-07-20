@@ -1,0 +1,156 @@
+[
+  {
+    "id": "V_scooter_d",
+    "type": "vehicle",
+    "name": "Diesel Scooter",
+    "blueprint": [ "o>o" ],
+    "parts": [
+      { "x": 0, "y": 0, "parts": [ "frame_handle", "headlight", "saddle_motor", "controls", "controls_electronic" ] },
+      { "x": 0, "y": 0, "parts": [ "horn_car", "motorcycle_kickstand", "V_engine_diesel_1C", "alternator_motorbike" ] },
+      { "x": 0, "y": 0, "parts": [ "battery_motorbike", { "part": "tank_small", "fuel": "diesel" } ] },
+      { "x": 1, "y": 0, "parts": [ "xlframe_vertical", "wheel_mount_light_steerable", "wheel_small" ] },
+      { "x": -1, "y": 0, "parts": [ "xlframe_vertical", "wheel_mount_light", "wheel_small" ] },
+      { "x": -1, "y": 0, "part": "muffler" }
+    ]
+  }, 
+  {
+    "id": "V_motorcycle_d",
+    "type": "vehicle",
+    "name": "Diesel Motorcycle",
+    "blueprint": [ "o#>o" ],
+    "parts": [
+      { "x": 0, "y": 0, "parts": [ "frame_vertical_2", "saddle_motor", "motorcycle_kickstand" ] },
+      { "x": 1, "y": 0, "parts": [ "frame_handle", { "part": "tank_small", "fuel": "diesel" } ] },
+      { "x": -1, "y": 0, "parts": [ "frame_vertical", "wheel_mount_light", "wheel_motorbike_rear" ] },
+      { "x": 2, "y": 0, "parts": [ "frame_vertical", "wheel_mount_light_steerable", "wheel_motorbike" ] },
+      { "x": 0, "y": 0, "parts": [ "controls", "controls_electronic", "vehicle_alarm" ] },
+      { "x": 0, "y": 0, "parts": [ "horn_car", "V_engine_diesel_2C", "alternator_motorbike" ] },
+      { "x": 1, "y": 0, "parts": [ "headlight", "battery_motorbike" ] },
+      { "x": -1, "y": 0, "parts": [ "muffler", "box" ] }
+    ]
+  },
+  {
+    "id": "V_motorcycle_sidecart_d",
+    "type": "vehicle",
+    "name": "Diesel Motorcycle",
+    "blueprint": [
+      [ "o#>o" ],
+      [ " #> " ]
+    ],
+    "parts": [
+      { "x": 0, "y": 0, "parts": [ "frame_vertical_2", "saddle_motor" ] },
+      { "x": 1, "y": 0, "parts": [ "frame_handle", { "part": "tank_small", "fuel": "diesel" } ] },
+      { "x": -1, "y": 0, "parts": [ "frame_vertical", "wheel_mount_light", "wheel_motorbike_rear" ] },
+      { "x": 2, "y": 0, "parts": [ "frame_vertical", "wheel_mount_light_steerable", "wheel_motorbike" ] },
+      { "x": 0, "y": 0, "parts": [ "controls", "controls_electronic", "vehicle_alarm" ] },
+      { "x": 0, "y": 0, "parts": [ "horn_car", "V_engine_diesel_2C", "alternator_motorbike" ] },
+      { "x": 1, "y": 0, "parts": [ "headlight", "battery_motorbike" ] },
+      { "x": -1, "y": 0, "parts": [ "muffler", "box" ] },
+      { "x": 0, "y": 1, "parts": [ "frame_cross", "wheel_mount_light", "wheel_motorbike", "seat" ] },
+      { "x": 1, "y": 1, "parts": [ "frame_handle", "box" ] }
+    ],
+    "items": [
+      { "x": -1, "y": 0, "chance": 2, "items": [ "joint" ] },
+      { "x": -1, "y": 0, "chance": 8, "items": [ "helmet_motor" ] },
+      { "x": 0, "y": 1, "chance": 33, "items": [ "helmet_motor" ] }
+    ]
+  },
+  {
+    "id": "V_quad_bike_d",
+    "type": "vehicle",
+    "name": "Diesel Quad Bike",
+    "blueprint": [
+      [ "O O" ],
+      [ "=#>" ],
+      [ "O O" ]
+    ],
+    "parts": [
+      { "x": 0, "y": 0, "parts": [ "frame_vertical_2", "saddle_motor", "controls", "controls_electronic", "horn_car" ] },
+      { "x": 1, "y": 0, "parts": [ "frame_cover", "V_engine_diesel_2C", "alternator_motorbike", "battery_motorbike" ] },
+      { "x": 1, "y": 0, "parts": [ "headlight", { "part": "tank_small", "fuel": "diesel" }, "plating_steel" ] },
+      { "x": -1, "y": 0, "parts": [ "frame_horizontal", "muffler", "trunk" ] },
+      { "x": 1, "y": 1, "parts": [ "frame_horizontal", "wheel_mount_light_steerable", "wheel_motorbike_or" ] },
+      { "x": 1, "y": -1, "parts": [ "frame_horizontal", "wheel_mount_light_steerable", "wheel_motorbike_or" ] },
+      { "x": -1, "y": -1, "parts": [ "frame_horizontal", "wheel_mount_light", "wheel_motorbike_or_rear" ] },
+      { "x": -1, "y": 1, "parts": [ "frame_horizontal", "wheel_mount_light", "wheel_motorbike_or_rear" ] }
+    ],
+    "items": [ { "x": -1, "y": 0, "chance": 10, "items": [ "helmet_motor" ] } ]
+  },
+  {
+    "id": "V_scooter_e",
+    "type": "vehicle",
+    "name": "Ethanol Scooter",
+    "blueprint": [ "o>o" ],
+    "parts": [
+      { "x": 0, "y": 0, "parts": [ "frame_handle", "headlight", "saddle_motor", "controls", "controls_electronic" ] },
+      { "x": 0, "y": 0, "parts": [ "horn_car", "motorcycle_kickstand", "V_engine_ethanol_1C", "alternator_motorbike" ] },
+      { "x": 0, "y": 0, "parts": [ "battery_motorbike", { "part": "tank_small", "fuel": "chem_ethanol" } ] },
+      { "x": 1, "y": 0, "parts": [ "xlframe_vertical", "wheel_mount_light_steerable", "wheel_small" ] },
+      { "x": -1, "y": 0, "parts": [ "xlframe_vertical", "wheel_mount_light", "wheel_small" ] },
+      { "x": -1, "y": 0, "part": "muffler" }
+    ]
+  }, 
+  {
+    "id": "V_motorcycle_e",
+    "type": "vehicle",
+    "name": "Ethanol Motorcycle",
+    "blueprint": [ "o#>o" ],
+    "parts": [
+      { "x": 0, "y": 0, "parts": [ "frame_vertical_2", "saddle_motor", "motorcycle_kickstand" ] },
+      { "x": 1, "y": 0, "parts": [ "frame_handle", { "part": "tank_small", "fuel": "chem_ethanol" } ] },
+      { "x": -1, "y": 0, "parts": [ "frame_vertical", "wheel_mount_light", "wheel_motorbike_rear" ] },
+      { "x": 2, "y": 0, "parts": [ "frame_vertical", "wheel_mount_light_steerable", "wheel_motorbike" ] },
+      { "x": 0, "y": 0, "parts": [ "controls", "controls_electronic", "vehicle_alarm" ] },
+      { "x": 0, "y": 0, "parts": [ "horn_car", "V_engine_ethanol_2C", "alternator_motorbike" ] },
+      { "x": 1, "y": 0, "parts": [ "headlight", "battery_motorbike" ] },
+      { "x": -1, "y": 0, "parts": [ "muffler", "box" ] }
+    ]
+  },
+  {
+    "id": "V_motorcycle_sidecart_e",
+    "type": "vehicle",
+    "name": "Ethanol Motorcycle",
+    "blueprint": [
+      [ "o#>o" ],
+      [ " #> " ]
+    ],
+    "parts": [
+      { "x": 0, "y": 0, "parts": [ "frame_vertical_2", "saddle_motor" ] },
+      { "x": 1, "y": 0, "parts": [ "frame_handle", { "part": "tank_small", "fuel": "chem_ethanol" } ] },
+      { "x": -1, "y": 0, "parts": [ "frame_vertical", "wheel_mount_light", "wheel_motorbike_rear" ] },
+      { "x": 2, "y": 0, "parts": [ "frame_vertical", "wheel_mount_light_steerable", "wheel_motorbike" ] },
+      { "x": 0, "y": 0, "parts": [ "controls", "controls_electronic", "vehicle_alarm" ] },
+      { "x": 0, "y": 0, "parts": [ "horn_car", "V_engine_ethanol_2C", "alternator_motorbike" ] },
+      { "x": 1, "y": 0, "parts": [ "headlight", "battery_motorbike" ] },
+      { "x": -1, "y": 0, "parts": [ "muffler", "box" ] },
+      { "x": 0, "y": 1, "parts": [ "frame_cross", "wheel_mount_light", "wheel_motorbike", "seat" ] },
+      { "x": 1, "y": 1, "parts": [ "frame_handle", "box" ] }
+    ],
+    "items": [
+      { "x": -1, "y": 0, "chance": 2, "items": [ "joint" ] },
+      { "x": -1, "y": 0, "chance": 8, "items": [ "helmet_motor" ] },
+      { "x": 0, "y": 1, "chance": 33, "items": [ "helmet_motor" ] }
+    ]
+  },
+  {
+    "id": "V_quad_bike_e",
+    "type": "vehicle",
+    "name": "Ethanol Quad Bike",
+    "blueprint": [
+      [ "O O" ],
+      [ "=#>" ],
+      [ "O O" ]
+    ],
+    "parts": [
+      { "x": 0, "y": 0, "parts": [ "frame_vertical_2", "saddle_motor", "controls", "controls_electronic", "horn_car" ] },
+      { "x": 1, "y": 0, "parts": [ "frame_cover", "V_engine_ethanol_2C", "alternator_motorbike", "battery_motorbike" ] },
+      { "x": 1, "y": 0, "parts": [ "headlight", { "part": "tank_small", "fuel": "chem_ethanol" }, "plating_steel" ] },
+      { "x": -1, "y": 0, "parts": [ "frame_horizontal", "muffler", "trunk" ] },
+      { "x": 1, "y": 1, "parts": [ "frame_horizontal", "wheel_mount_light_steerable", "wheel_motorbike_or" ] },
+      { "x": 1, "y": -1, "parts": [ "frame_horizontal", "wheel_mount_light_steerable", "wheel_motorbike_or" ] },
+      { "x": -1, "y": -1, "parts": [ "frame_horizontal", "wheel_mount_light", "wheel_motorbike_or_rear" ] },
+      { "x": -1, "y": 1, "parts": [ "frame_horizontal", "wheel_mount_light", "wheel_motorbike_or_rear" ] }
+    ],
+    "items": [ { "x": -1, "y": 0, "chance": 10, "items": [ "helmet_motor" ] } ]
+  }
+]

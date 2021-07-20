@@ -1,0 +1,314 @@
+[
+	{
+    "id": "V_engine_diesel_1C",
+    "copy-from": "diesel_engine",
+    "type": "vehicle_part",
+    "item": "V_diesel_1C",    
+    "durability": 150,
+    "epower": 0,
+    "power": 6633,
+    "energy_consumption": 14740,
+    "folded_volume": 6,
+    "breaks_into": [
+      { "item": "steel_lump", "count": [ 5, 10 ] },
+      { "item": "steel_chunk", "count": [ 5, 10 ] },
+      { "item": "scrap", "count": [ 5, 10 ] }
+    ],
+    "requirements": {
+      "install": { "skills": [ [ "mechanics", 3 ] ], "time": "60 m", "using": [ [ "vehicle_bolt", 1 ] ] },
+      "removal": { "skills": [ [ "mechanics", 2 ] ], "time": "30 m", "using": [ [ "vehicle_bolt", 1 ] ] },
+      "repair": { "skills": [ [ "mechanics", 4 ] ], "time": "60 m", "using": [ [ "welding_standard", 5 ] ] }
+    },
+    "extend": { "flags": [ "FOLDABLE" ] },
+    "damage_reduction": { "all": 40 }
+  },
+  {
+    "id": "V_engine_diesel_1C_L",
+    "copy-from": "diesel_engine",
+    "type": "vehicle_part",
+    "item": "V_diesel_1C_L",    
+    "durability": 150,
+    "epower": 0,
+    "power": 36900,
+    "energy_consumption": 99600,
+    "folded_volume": 8,
+    "breaks_into": [
+      { "item": "steel_lump", "count": [ 6, 12 ] },
+      { "item": "steel_chunk", "count": [ 6, 12 ] },
+      { "item": "scrap", "count": [ 6, 12 ] }
+    ],
+    "requirements": {
+      "install": { "skills": [ [ "mechanics", 4 ] ], "time": "60 m", "using": [ [ "vehicle_bolt", 1 ] ] },
+      "removal": { "skills": [ [ "mechanics", 2 ] ], "time": "30 m", "using": [ [ "vehicle_bolt", 1 ] ] },
+      "repair": { "skills": [ [ "mechanics", 5 ] ], "time": "60 m", "using": [ [ "welding_standard", 5 ] ] }
+    },
+    "extend": { "flags": [ "FOLDABLE" ] },
+    "damage_reduction": { "all": 40 }
+  },
+  {
+    "id": "V_engine_diesel_2C",
+    "copy-from": "diesel_engine",
+    "type": "vehicle_part",
+    "item": "V_diesel_2C",
+    "durability": 200,
+    "epower": -50,
+    "power": 33570,
+    "energy_consumption": 99600,
+    "folded_volume": 8,
+    "breaks_into": [
+      { "item": "steel_lump", "count": [ 10, 20 ] },
+      { "item": "steel_chunk", "count": [ 10, 20 ] },
+      { "item": "scrap", "count": [ 10, 20 ] }
+    ],
+    "requirements": {
+      "install": { "skills": [ [ "mechanics", 3 ] ], "time": "60 m", "using": [ [ "vehicle_bolt", 1 ] ] },
+      "removal": { "skills": [ [ "mechanics", 2 ] ], "time": "30 m", "using": [ [ "vehicle_bolt", 1 ] ] },
+      "repair": { "skills": [ [ "mechanics", 4 ] ], "time": "60 m", "using": [ [ "welding_standard", 5 ] ] }
+    },
+    "extend": { "flags": [ "FOLDABLE" ] },
+    "damage_reduction": { "all": 60 }
+  },
+  {
+    "id": "V_engine_diesel_4C",
+    "copy-from": "diesel_engine",
+    "type": "vehicle_part",
+    "item": "V_diesel_4C",
+    "durability": 300,
+    "epower": -150,
+    "power": 83925,
+    "energy_consumption": 248800,
+    "breaks_into": [
+      { "item": "steel_lump", "count": [ 20, 30 ] },
+      { "item": "steel_chunk", "count": [ 20, 30 ] },
+      { "item": "scrap", "count": [ 20, 30 ] }
+    ],
+    "requirements": {
+      "install": { "skills": [ [ "mechanics", 3 ] ], "time": "60 m", "using": [ [ "vehicle_bolt", 1 ] ] },
+      "removal": { "skills": [ [ "mechanics", 2 ] ], "time": "30 m", "using": [ [ "vehicle_bolt", 1 ] ] },
+      "repair": { "skills": [ [ "mechanics", 4 ] ], "time": "60 m", "using": [ [ "welding_standard", 5 ] ] }
+    },
+    "damage_reduction": { "all": 50 }
+  },
+  {
+    "abstract": "V_orky_engine",
+    "copy-from": "engine_combustion",
+    "type": "vehicle_part",
+    "fuel_type": "biodiesel",
+    "fuel_options": [ "biodiesel", "lamp_oil" ],
+    "looks_like": "diesel_engine_v12",
+    "m2c": 65,
+    "//": "WTF is effeciency?",
+    "extend": { "flags": [ "E_COLD_START" ] },
+    "backfire_threshold": 0.7,
+    "backfire_freq": 15,
+    "noise_factor": 25,
+    "description": "A custom-made ICE, designed to run on low-grade fuels such as lamp oil or biodiesel. Guzzles fuel inefficiently and noisily, but will get you from A to B if you can't find any abandoned cars with working engines, or any diesel and gas.",	
+    "damage_reduction": { "all": 75 }
+  },
+  {
+    "id": "V_engine_orky_tiny",
+    "copy-from": "V_orky_engine",
+    "type": "vehicle_part",
+    "item": "V_orky_tiny",    
+    "durability": 50,
+    "epower": 0,
+    "power": 4377,
+    "energy_consumption": 19604,
+    "folded_volume": 6,
+    "breaks_into": [
+      { "item": "steel_lump", "count": [ 5, 10 ] },
+      { "item": "steel_chunk", "count": [ 5, 10 ] },
+      { "item": "scrap", "count": [ 5, 10 ] }
+    ],
+    "requirements": {
+      "install": { "skills": [ [ "mechanics", 4 ] ], "time": "60 m", "using": [ [ "vehicle_bolt", 1 ] ] },
+      "removal": { "skills": [ [ "mechanics", 2 ] ], "time": "30 m", "using": [ [ "vehicle_bolt", 1 ] ] },
+      "repair": { "skills": [ [ "mechanics", 4 ] ], "time": "60 m", "using": [ [ "welding_standard", 5 ] ] }
+    },
+    "extend": { "flags": [ "FOLDABLE" ] },
+    "damage_reduction": { "all": 40 }
+  },
+  {
+    "id": "V_engine_orky_small",
+    "copy-from": "V_orky_engine",
+    "type": "vehicle_part",
+    "item": "V_orky_small",    
+    "durability": 100,
+    "epower": 0,
+    "power": 24353,
+    "energy_consumption": 132468,
+    "folded_volume": 8,
+    "breaks_into": [
+      { "item": "steel_lump", "count": [ 6, 12 ] },
+      { "item": "steel_chunk", "count": [ 6, 12 ] },
+      { "item": "scrap", "count": [ 6, 12 ] }
+    ],
+    "requirements": {
+      "install": { "skills": [ [ "mechanics", 5 ] ], "time": "60 m", "using": [ [ "vehicle_bolt", 1 ] ] },
+      "removal": { "skills": [ [ "mechanics", 3 ] ], "time": "30 m", "using": [ [ "vehicle_bolt", 1 ] ] },
+      "repair": { "skills": [ [ "mechanics", 5 ] ], "time": "60 m", "using": [ [ "welding_standard", 5 ] ] }
+    },
+    "extend": { "flags": [ "FOLDABLE" ] },
+    "damage_reduction": { "all": 40 }
+  },
+  {
+    "id": "V_engine_orky_large",
+    "copy-from": "V_orky_engine",
+    "type": "vehicle_part",
+    "item": "V_orky_large",
+    "durability": 200,
+    "epower": -200,
+	"power": 55390,
+    "energy_consumption": 330904,    
+    "breaks_into": [
+      { "item": "steel_lump", "count": [ 20, 30 ] },
+      { "item": "steel_chunk", "count": [ 20, 30 ] },
+      { "item": "scrap", "count": [ 20, 30 ] }
+    ],
+    "requirements": {
+      "install": { "skills": [ [ "mechanics", 5 ] ], "time": "60 m", "using": [ [ "vehicle_bolt", 1 ] ] },
+      "removal": { "skills": [ [ "mechanics", 3 ] ], "time": "30 m", "using": [ [ "vehicle_bolt", 1 ] ] },
+      "repair": { "skills": [ [ "mechanics", 5 ] ], "time": "60 m", "using": [ [ "welding_standard", 5 ] ] }
+    },
+    "damage_reduction": { "all": 50 }
+  },
+  {
+    "abstract": "ethanol_engine",
+    "copy-from": "engine_combustion",
+    "type": "vehicle_part",
+    "fuel_type": "chem_ethanol",
+	"fuel_options": [ "chem_ethanol", "chem_methanol", "denat_alcohol" ],
+    "m2c": 60,    
+    "description": "An ethanol-burning combustion engine. Burns ethanol (or other pure spirits) from a tank in the vehicle. It makes you want to go to Brazil."
+  }, 
+  {
+    "id": "V_engine_ethanol_1C",
+    "copy-from": "ethanol_engine",
+    "type": "vehicle_part",
+    "item": "V_ethanol_1C",    
+    "durability": 150,
+    "epower": 0,
+    "power": 7370,
+    "energy_consumption": 18425,
+    "folded_volume": 6,
+    "breaks_into": [
+      { "item": "steel_lump", "count": [ 5, 10 ] },
+      { "item": "steel_chunk", "count": [ 5, 10 ] },
+      { "item": "scrap", "count": [ 5, 10 ] }
+    ],
+    "requirements": {
+      "install": { "skills": [ [ "mechanics", 2 ] ], "time": "60 m", "using": [ [ "vehicle_bolt", 1 ] ] },
+      "removal": { "skills": [ [ "mechanics", 2 ] ], "time": "30 m", "using": [ [ "vehicle_bolt", 1 ] ] },
+      "repair": { "skills": [ [ "mechanics", 3 ] ], "time": "60 m", "using": [ [ "welding_standard", 5 ] ] }
+    },
+    "extend": { "flags": [ "FOLDABLE" ] },
+    "damage_reduction": { "all": 40 }
+  },
+  {
+    "id": "V_engine_ethanol_2C",
+    "copy-from": "ethanol_engine",
+    "type": "vehicle_part",
+    "item": "V_ethanol_2C",
+    "durability": 200,
+    "epower": -50,
+    "power": 37300,
+    "energy_consumption": 124500,
+    "folded_volume": 8,
+    "breaks_into": [
+      { "item": "steel_lump", "count": [ 10, 20 ] },
+      { "item": "steel_chunk", "count": [ 10, 20 ] },
+      { "item": "scrap", "count": [ 10, 20 ] }
+    ],
+    "requirements": {
+      "install": { "skills": [ [ "mechanics", 2 ] ], "time": "60 m", "using": [ [ "vehicle_bolt", 1 ] ] },
+      "removal": { "skills": [ [ "mechanics", 2 ] ], "time": "30 m", "using": [ [ "vehicle_bolt", 1 ] ] },
+      "repair": { "skills": [ [ "mechanics", 3 ] ], "time": "60 m", "using": [ [ "welding_standard", 5 ] ] }
+    },
+    "extend": { "flags": [ "FOLDABLE" ] },
+    "damage_reduction": { "all": 60 }
+  },  
+  {
+    "id": "V_engine_ethanol_4C",
+    "copy-from": "ethanol_engine",
+    "type": "vehicle_part",
+    "item": "V_ethanol_4C",
+    "durability": 300,
+    "epower": -150,
+    "power": 93250,
+    "energy_consumption": 311000,
+    "breaks_into": [
+      { "item": "steel_lump", "count": [ 20, 30 ] },
+      { "item": "steel_chunk", "count": [ 20, 30 ] },
+      { "item": "scrap", "count": [ 20, 30 ] }
+    ],
+    "requirements": {
+      "install": { "skills": [ [ "mechanics", 2 ] ], "time": "60 m", "using": [ [ "vehicle_bolt", 1 ] ] },
+      "removal": { "skills": [ [ "mechanics", 2 ] ], "time": "30 m", "using": [ [ "vehicle_bolt", 1 ] ] },
+      "repair": { "skills": [ [ "mechanics", 3 ] ], "time": "60 m", "using": [ [ "welding_standard", 5 ] ] }
+    },
+    "damage_reduction": { "all": 50 }
+  },
+  {
+    "id": "V_engine_ethanol_6C",
+    "copy-from": "ethanol_engine",
+    "type": "vehicle_part",
+    "item": "V_ethanol_6C",
+    "durability": 400,
+    "epower": -200,
+    "power": 149200,
+    "energy_consumption": 497500,
+    "breaks_into": [
+      { "item": "steel_lump", "count": [ 30, 40 ] },
+      { "item": "steel_chunk", "count": [ 30, 40 ] },
+      { "item": "scrap", "count": [ 30, 40 ] }
+    ],
+    "requirements": {
+      "install": { "skills": [ [ "mechanics", 3 ] ], "time": "60 m", "using": [ [ "vehicle_bolt", 1 ] ] },
+      "removal": { "skills": [ [ "mechanics", 2 ] ], "time": "30 m", "using": [ [ "vehicle_bolt", 1 ] ] },
+      "repair": { "skills": [ [ "mechanics", 4 ] ], "time": "60 m", "using": [ [ "welding_standard", 5 ] ] }
+    },
+    "damage_reduction": { "all": 100 }
+  },
+  {
+    "id": "V_engine_ethanol_8C",
+    "copy-from": "ethanol_engine",
+    "type": "vehicle_part",
+    "item": "V_ethanol_8C",
+    "durability": 400,
+    "epower": -250,
+    "power": 242450,
+    "energy_consumption": 808200,
+    "breaks_into": [
+      { "item": "steel_lump", "count": [ 40, 50 ] },
+      { "item": "steel_chunk", "count": [ 40, 50 ] },
+      { "item": "scrap", "count": [ 40, 50 ] }
+    ],
+    "requirements": {
+      "install": { "skills": [ [ "mechanics", 3 ] ], "time": "60 m", "using": [ [ "vehicle_bolt", 1 ] ] },
+      "removal": { "skills": [ [ "mechanics", 2 ] ], "time": "30 m", "using": [ [ "vehicle_bolt", 1 ] ] },
+      "repair": { "skills": [ [ "mechanics", 4 ] ], "time": "60 m", "using": [ [ "welding_standard", 5 ] ] }
+    },
+    "damage_reduction": { "all": 100 }
+  },
+  {
+    "id": "V_engine_ethanol_12C",
+    "copy-from": "ethanol_engine",
+    "type": "vehicle_part",
+    "item": "V_ethanol_12C",
+    "durability": 600,
+    "epower": -350,
+    "power": 447600,
+    "energy_consumption": 1492000,
+    "breaks_into": [
+      { "item": "steel_lump", "count": [ 45, 58 ] },
+      { "item": "steel_chunk", "count": [ 45, 58 ] },
+      { "item": "scrap", "count": [ 45, 58 ] }
+    ],
+    "requirements": {
+      "install": { "skills": [ [ "mechanics", 6 ] ], "time": "60 m", "using": [ [ "vehicle_bolt", 1 ] ] },
+      "removal": { "skills": [ [ "mechanics", 4 ] ], "time": "30 m", "using": [ [ "vehicle_bolt", 1 ] ] },
+      "repair": { "skills": [ [ "mechanics", 7 ] ], "time": "60 m", "using": [ [ "welding_standard", 5 ] ] }
+    },
+    "damage_reduction": { "all": 110 }
+  }
+]

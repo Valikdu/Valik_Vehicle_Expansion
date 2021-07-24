@@ -1537,5 +1537,37 @@
       { "x": -2, "y": 1, "chance": 15, "item_groups": [ "car_kit" ] },
       { "x": -2, "y": 1, "chance": 15, "items": [ "jack_small", "wheel" ] }
     ]
+  },
+  {
+    "id": "micro_car",
+    "type": "vehicle",
+    "name": "Microcar",
+    "blueprint": [
+      [ "o+o" ],
+      [ "|='" ],
+      [ "|='" ],
+      [ "o+o" ]
+    ],
+    "parts": [
+      { "x": 0, "y": 0, "parts": [ "frame_vertical_2", "seat", "seatbelt", "roof", "controls", "dashboard", "vehicle_alarm", "horn_car" ] },
+      { "x": 0, "y": 1, "parts": [ "frame_vertical_2", "trunk" , "roof" ] },      
+      { "x": 0, "y": -1, "parts": [ "frame_vertical", "door_front_left" ] },      
+	  { "x": 0, "y": 2, "parts": [ "frame_vertical", "door_front_right" ] },
+      { "x": 1, "y": 0, "parts": [ "frame_horizontal", "windshield_horizontal_front" ] },      
+	  { "x": 1, "y": 1, "parts": [ "frame_horizontal", "windshield_horizontal_front" ] },      
+      { "x": 1, "y": -1, "parts": [ "frame_vertical", "windshield_nw" ] },      
+	  { "x": 1, "y": 2, "parts": [ "frame_vertical", "windshield_ne" ] },      
+      { "x": -1, "y": 0, "parts": [ "frame_ne", "halfboard_horizontal", "engine_1cyl_large", "alternator_motorbike", "battery_motorbike" ] },      
+      { "x": -1, "y": 1, "parts": [ "frame_nw", "halfboard_horizontal", { "part": "tank_small", "fuel": "gasoline" } ] },	  
+      { "x": -1, "y": -1, "parts": [ "frame_horizontal", "halfboard_sw", "wheel_mount_light", "wheel_motorbike_rear" ] },      
+      { "x": -1, "y": 2, "parts": [ "frame_horizontal", "halfboard_se", "wheel_mount_light", "wheel_motorbike_rear" ] },            
+      { "x": 1, "y": -1, "parts": [ "frame_nw", "halfboard_nw", "headlight", "wheel_mount_light", "wheel_motorbike" ] }, 
+	  { "x": 1, "y": 2, "parts": [ "frame_ne", "halfboard_ne", "headlight", "wheel_mount_light", "wheel_motorbike" ] }
+    ],
+    "items": [
+      { "x": 0, "y": 0, "chance": 8, "item_groups": [ "car_misc" ] },
+      { "x": 0, "y": 1, "chance": 10, "item_groups": [ "car_kit" ] },      
+      { "x": 0, "y": 1, "chance": 8, "items": [ "jack_small", "wheel" ] }
+    ]
   }
 ]

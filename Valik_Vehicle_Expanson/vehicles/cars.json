@@ -1539,35 +1539,107 @@
     ]
   },
   {
-    "id": "micro_car",
+    "id": "V_micro_car_g",
     "type": "vehicle",
     "name": "Microcar",
     "blueprint": [
-      [ "o+o" ],
-      [ "|='" ],
-      [ "|='" ],
-      [ "o+o" ]
+      [ "|+o" ],
+      [ "o='" ],      
+      [ "|+o" ]
     ],
     "parts": [
-      { "x": 0, "y": 0, "parts": [ "frame_vertical_2", "seat", "seatbelt", "roof", "controls", "dashboard", "vehicle_alarm", "horn_car" ] },
-      { "x": 0, "y": 1, "parts": [ "frame_vertical_2", "trunk" , "roof" ] },      
+      { "x": 0, "y": 0, "parts": [ "frame_vertical_2", "seat", "seatbelt", "roof", "controls", "dashboard", "stereo","vehicle_alarm", "horn_car" ] },        
       { "x": 0, "y": -1, "parts": [ "frame_vertical", "door_front_left" ] },      
-	  { "x": 0, "y": 2, "parts": [ "frame_vertical", "door_front_right" ] },
-      { "x": 1, "y": 0, "parts": [ "frame_horizontal", "windshield_horizontal_front" ] },      
-	  { "x": 1, "y": 1, "parts": [ "frame_horizontal", "windshield_horizontal_front" ] },      
-      { "x": 1, "y": -1, "parts": [ "frame_vertical", "windshield_nw" ] },      
-	  { "x": 1, "y": 2, "parts": [ "frame_vertical", "windshield_ne" ] },      
-      { "x": -1, "y": 0, "parts": [ "frame_ne", "halfboard_horizontal", "engine_1cyl_large", "alternator_motorbike", "battery_motorbike" ] },      
-      { "x": -1, "y": 1, "parts": [ "frame_nw", "halfboard_horizontal", { "part": "tank_small", "fuel": "gasoline" } ] },	  
-      { "x": -1, "y": -1, "parts": [ "frame_horizontal", "halfboard_sw", "wheel_mount_light", "wheel_motorbike_rear" ] },      
-      { "x": -1, "y": 2, "parts": [ "frame_horizontal", "halfboard_se", "wheel_mount_light", "wheel_motorbike_rear" ] },            
-      { "x": 1, "y": -1, "parts": [ "frame_nw", "halfboard_nw", "headlight", "wheel_mount_light", "wheel_motorbike" ] }, 
-	  { "x": 1, "y": 2, "parts": [ "frame_ne", "halfboard_ne", "headlight", "wheel_mount_light", "wheel_motorbike" ] }
+	  { "x": 0, "y": 1, "parts": [ "frame_vertical", "door_front_right" ] },      
+      { "x": -1, "y": 0, "parts": [ "frame_horizontal", "halfboard_horizontal", "wheel_mount_light", "wheel_small" ] },     
+	  { "x": -1, "y": -1, "parts": [ "frame_sw", "halfboard_sw" ] },      
+      { "x": -1, "y": 1, "parts": [ "frame_se", "halfboard_se" ] },            	  
+      { "x": 1, "y": 0, "parts": [ "frame_horizontal", "windshield_horizontal_front", "engine_vtwin", "alternator_motorbike", "battery_motorbike", { "part": "tank_small", "fuel": "gasoline" } ] },      	         
+	  { "x": 1, "y": -1, "parts": [ "frame_nw", "halfboard_nw", "headlight", "wheel_mount_light_steerable", "wheel_motorbike" ] }, 	  
+	  { "x": 1, "y": 1, "parts": [ "frame_ne", "halfboard_ne", "headlight", "wheel_mount_light_steerable", "wheel_motorbike" ] }
     ],
     "items": [
       { "x": 0, "y": 0, "chance": 8, "item_groups": [ "car_misc" ] },
-      { "x": 0, "y": 1, "chance": 10, "item_groups": [ "car_kit" ] },      
-      { "x": 0, "y": 1, "chance": 8, "items": [ "jack_small", "wheel" ] }
+      { "x": 0, "y": 0, "chance": 10, "item_groups": [ "car_kit" ] },      
+      { "x": 0, "y": 0, "chance": 8, "items": [ "jack_small", "wheel_motorbike" ] }
+    ]
+  },
+  {
+    "id": "V_micro_car_d",
+    "type": "vehicle",
+    "name": "Diesel Microcar",
+    "blueprint": [
+      [ "|+o" ],
+      [ "o='" ],      
+      [ "|+o" ]
+    ],
+    "parts": [
+      { "x": 0, "y": 0, "parts": [ "frame_vertical_2", "seat", "seatbelt", "roof", "controls", "dashboard", "stereo","vehicle_alarm", "horn_car" ] },        
+      { "x": 0, "y": -1, "parts": [ "frame_vertical", "door_front_left" ] },      
+	  { "x": 0, "y": 1, "parts": [ "frame_vertical", "door_front_right" ] },      
+      { "x": -1, "y": 0, "parts": [ "frame_horizontal", "halfboard_horizontal", "wheel_mount_light", "wheel_small" ] },     
+	  { "x": -1, "y": -1, "parts": [ "frame_sw", "halfboard_sw" ] },      
+      { "x": -1, "y": 1, "parts": [ "frame_se", "halfboard_se" ] },            	  
+      { "x": 1, "y": 0, "parts": [ "frame_horizontal", "windshield_horizontal_front", "V_engine_diesel_2C", "alternator_motorbike", "battery_motorbike", { "part": "tank_small", "fuel": "diesel" } ],     	         
+	  { "x": 1, "y": -1, "parts": [ "frame_nw", "halfboard_nw", "headlight", "wheel_mount_light_steerable", "wheel_motorbike" ] }, 	  
+	  { "x": 1, "y": 1, "parts": [ "frame_ne", "halfboard_ne", "headlight", "wheel_mount_light_steerable", "wheel_motorbike" ] }
+    ],
+    "items": [
+      { "x": 0, "y": 0, "chance": 8, "item_groups": [ "car_misc" ] },
+      { "x": 0, "y": 0, "chance": 10, "item_groups": [ "car_kit" ] },      
+      { "x": 0, "y": 0, "chance": 8, "items": [ "jack_small", "wheel_motorbike" ] }
+    ]
+  },
+  {
+    "id": "V_micro_car_e",
+    "type": "vehicle",
+    "name": "Ethanol Microcar",
+    "blueprint": [
+      [ "|+o" ],
+      [ "o='" ],      
+      [ "|+o" ]
+    ],
+    "parts": [
+      { "x": 0, "y": 0, "parts": [ "frame_vertical_2", "seat", "seatbelt", "roof", "controls", "dashboard", "stereo","vehicle_alarm", "horn_car" ] },        
+      { "x": 0, "y": -1, "parts": [ "frame_vertical", "door_front_left" ] },      
+	  { "x": 0, "y": 1, "parts": [ "frame_vertical", "door_front_right" ] },      
+      { "x": -1, "y": 0, "parts": [ "frame_horizontal", "halfboard_horizontal", "wheel_mount_light", "wheel_small" ] },     
+	  { "x": -1, "y": -1, "parts": [ "frame_sw", "halfboard_sw" ] },      
+      { "x": -1, "y": 1, "parts": [ "frame_se", "halfboard_se" ] },            	  
+      { "x": 1, "y": 0, "parts": [ "frame_horizontal", "windshield_horizontal_front", "V_engine_ethanol_2C", "alternator_motorbike", "battery_motorbike", { "part": "tank_small", "fuel": "chem_ethanol" } ] },      	         
+	  { "x": 1, "y": -1, "parts": [ "frame_nw", "halfboard_nw", "headlight", "wheel_mount_light_steerable", "wheel_motorbike", { "part": "tank_little", "fuel": "chem_ethanol" } ] }, 	  
+	  { "x": 1, "y": 1, "parts": [ "frame_ne", "halfboard_ne", "headlight", "wheel_mount_light_steerable", "wheel_motorbike", { "part": "tank_little", "fuel": "chem_ethanol" } ] }
+    ],
+    "items": [
+      { "x": 0, "y": 0, "chance": 8, "item_groups": [ "car_misc" ] },
+      { "x": 0, "y": 0, "chance": 10, "item_groups": [ "car_kit" ] },      
+      { "x": 0, "y": 0, "chance": 8, "items": [ "jack_small", "wheel_motorbike" ] }
+    ]
+  },
+  {
+    "id": "V_micro_car_ev",
+    "type": "vehicle",
+    "name": "Electric Microcar",
+    "blueprint": [
+      [ "|+o" ],
+      [ "o='" ],      
+      [ "|+o" ]
+    ],
+    "parts": [
+      { "x": 0, "y": 0, "parts": [ "xlframe_vertical_2", "seat", "seatbelt", "roof", "controls", "dashboard", "stereo","vehicle_alarm", "horn_car" ] },        
+      { "x": 0, "y": -1, "parts": [ "xlframe_vertical", "door_front_left" ] },      
+	  { "x": 0, "y": 1, "parts": [ "xlframe_vertical", "door_front_right" ] },      
+      { "x": -1, "y": 0, "parts": [ "xlframe_horizontal", "xlhalfboard_horizontal", "wheel_mount_light", "wheel_small" ] },     
+	  { "x": -1, "y": -1, "parts": [ "xlframe_sw", "xlhalfboard_sw" ] },      
+      { "x": -1, "y": 1, "parts": [ "xlframe_se", "xlhalfboard_se" ] },            	  
+      { "x": 1, "y": 0, "parts": [ "xlframe_horizontal", "windshield_horizontal_front", "medium_storage_battery", "engine_electric_small" ] },      	         
+	  { "x": 1, "y": -1, "parts": [ "xlframe_nw", "xlhalfboard_nw", "headlight", "wheel_mount_light_steerable", "wheel_small" ] }, 	  
+	  { "x": 1, "y": 1, "parts": [ "xlframe_ne", "xlhalfboard_ne", "headlight", "wheel_mount_light_steerable", "wheel_small" ] }
+    ],
+    "items": [
+      { "x": 0, "y": 0, "chance": 8, "item_groups": [ "car_misc" ] },
+      { "x": 0, "y": 0, "chance": 10, "item_groups": [ "car_kit" ] },      
+      { "x": 0, "y": 0, "chance": 8, "items": [ "jack_small", "wheel_small" ] }
     ]
   }
 ]

@@ -92,7 +92,7 @@
     "time": "40 m",
     "components": [
       [ [ "pipe", 4 ] ],
-	  [ [ "chain", 1 ] ], 
+	  [ [ "drivebelt_makeshift", 1 ] ], 
 	  [ [ "filter_air_makeshift", 1 ] ],
 	  [ [ "filter_liquid_makeshift", 1 ] ],
       [ [ "motor_tiny", 1 ] ],	  
@@ -115,7 +115,7 @@
     "time": "50 m",
     "components": [
       [ [ "pipe", 8 ] ],
-	  [ [ "chain", 2 ] ], 
+	  [ [ "drivebelt_makeshift", 2 ] ], 
 	  [ [ "filter_air_makeshift", 1 ] ],
 	  [ [ "filter_liquid_makeshift", 1 ] ],
       [ [ "motor_small", 1 ] ],	  
@@ -138,7 +138,7 @@
     "time": "60 m",
     "components": [
       [ [ "pipe", 12 ] ],
-	  [ [ "chain", 3 ] ], 
+	  [ [ "drivebelt_makeshift", 3 ] ], 
 	  [ [ "filter_air_makeshift", 1 ] ],
 	  [ [ "filter_liquid_makeshift", 1 ] ],
       [ [ "motor_small", 1 ] ],	  

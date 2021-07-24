@@ -15,7 +15,7 @@
     "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "SAW_M", "level": 1 }, { "id": "SCREW", "level": 1 }, { "id": "WRENCH", "level": 1 }, { "id": "WRENCH_FINE", "level": 1 }  ],
     "components": [
       [ [ "pipe", 4 ] ],
-	  [ [ "drivebelt", 1 ], [ "chain", 1 ] ], 
+	  [ [ "drivebelt", 1 ], [ "chain", 1 ], [ "drivebelt_makeshift", 1 ] ], 
 	  [ [ "filter_air", 1 ], [ "filter_air_makeshift", 1 ] ],
 	  [ [ "filter_liquid", 1 ], [ "filter_liquid_makeshift", 1 ] ],
       [ [ "motor_tiny", 1 ] ],	  
@@ -45,7 +45,7 @@
     "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "SAW_M", "level": 1 }, { "id": "SCREW", "level": 1 }, { "id": "WRENCH", "level": 1 }, { "id": "WRENCH_FINE", "level": 1 }  ],
     "components": [
       [ [ "pipe", 8 ] ],
-	  [ [ "drivebelt", 2 ], [ "chain", 2 ] ], 
+	  [ [ "drivebelt", 2 ], [ "chain", 2 ], [ "drivebelt_makeshift", 1 ] ], 
 	  [ [ "filter_air", 1 ], [ "filter_air_makeshift", 1 ] ],
 	  [ [ "filter_liquid", 1 ], [ "filter_liquid_makeshift", 1 ] ],
       [ [ "motor_small", 1 ] ],	  
@@ -76,7 +76,7 @@
     "components": [
       [ [ "pipe", 12 ] ],
 	  [ [ "drivebelt", 3 ], [ "chain", 3 ] ], 
-	  [ [ "filter_air", 1 ], [ "filter_air_makeshift", 1 ] ],
+	  [ [ "filter_air", 1 ], [ "filter_air_makeshift", 1 ], [ "drivebelt_makeshift", 1 ] ],
 	  [ [ "filter_liquid", 1 ], [ "filter_liquid_makeshift", 1 ] ],
       [ [ "motor_small", 1 ] ],	  
 	  [ [ "well_pump", 3 ] ],

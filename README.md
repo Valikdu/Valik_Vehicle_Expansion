@@ -7,7 +7,7 @@ Additions:
 
 - Ethanol engines (all sizes);
 
-- Capability to create orky Jury-rigged engines using certain recipe books;
+- Capability to create orky Jury-rigged engines using certain recipe books - these engines guzzle lamp oil or biodiesel and may come in handy if you've got a shotrage of real fuels;
 
 - Diesel and ethanol-powered civilian vehicles (cars, bikes, trucks, etc);
 

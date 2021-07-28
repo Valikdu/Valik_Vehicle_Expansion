@@ -19,4 +19,4 @@ Additions:
 
 - Integrated **Cars to Wrecks** (numbers tuned for less hardcore wrecking);
 
--New flintlock weapons;
+- New flintlock weapons;

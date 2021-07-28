@@ -24,7 +24,7 @@
     "blackpowder_tolerance": 96,
     "clip_size": 5,
     "reload": 1200,
-	"flags": [ "RELOAD_ONE", "NO_UNLOAD" ],
+	"flags": [ "RELOAD_ONE", "NO_UNLOAD", "NEVER_JAMS" ],
     "valid_mod_locations": [
       [ "accessories", 1 ],
       [ "sling", 1 ],
@@ -34,8 +34,7 @@
       [ "sights mount", 1 ],
       [ "stock mount", 1 ]
     ],
-	"faults": [ "fault_gun_blackpowder", "fault_gun_dirt" ],
-    "flags": [ "NEVER_JAMS", "DURABLE_MELEE" ]
+	"faults": [ "fault_gun_blackpowder", "fault_gun_dirt" ],    
   },
   {
     "id": "pistol_collier",
@@ -72,6 +71,6 @@
       [ "underbarrel mount", 1 ]
     ],
 	"faults": [ "fault_gun_blackpowder", "fault_gun_dirt" ],
-    "flags": [ "NEVER_JAMS", "DURABLE_MELEE" ]
+    "flags": [ "NEVER_JAMS", "DURABLE_MELEE", "NEVER_JAMS" ]
   }
 ]

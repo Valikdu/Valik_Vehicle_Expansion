@@ -18,3 +18,5 @@ Additions:
 - Spawning: for vehicles that were missing a diesel version, diesel versions have a ~50% weight for spawning; ethanol versions have half the weight of diesel;
 
 - Integrated **Cars to Wrecks** (numbers tuned for less hardcore wrecking);
+
+-New flintlock weapons;

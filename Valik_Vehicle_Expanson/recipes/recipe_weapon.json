@@ -17,10 +17,9 @@
       { "id": "SCREW_FINE", "level": 1 },
       { "id": "CHISEL", "level": 3 }
     ],
-    "using": [ [ "forging_standard", 6 ], [ "steel_standard", 3 ] ],
+    "using": [ [ "forging_standard", 7 ], [ "steel_standard", 3 ] ],
     "tools": [ [ [ "tongs", -1 ] ], [ [ "swage", -1 ] ] ],
-    "components": [ 
-		[ [ "scrap", 4 ] ],
+    "components": [ 		
 		[ [ "2x4", 2 ] ], 
 		[ [ "pipe", 2 ] ], 
 		[ [ "pilot_light", 1 ] ], 
@@ -44,10 +43,9 @@
       { "id": "SCREW_FINE", "level": 1 },
       { "id": "CHISEL", "level": 3 }
     ],
-    "using": [ [ "forging_standard", 6 ], [ "steel_standard", 3 ] ],
+    "using": [ [ "forging_standard", 7 ], [ "steel_standard", 3 ] ],
     "tools": [ [ [ "tongs", -1 ] ], [ [ "swage", -1 ] ] ],
-    "components": [ 
-		[ [ "scrap", 4 ] ],
+    "components": [ 		
 		[ [ "2x4", 1 ] ], 
 		[ [ "pipe", 1 ] ], 
 		[ [ "pilot_light", 1 ] ], 

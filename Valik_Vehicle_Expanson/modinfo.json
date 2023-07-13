@@ -1,13 +1,12 @@
 [
   {
     "type": "MOD_INFO",
-	"mod-type": "VEHICLE",
     "id": "valikengines",
     "name": "Valik's Machine Shop 1.1",
     "authors": [ "Valik" ],
     "maintainers": [ "Valik" ],
     "description": "Adds diesel engines smaller than the V6, as well as ethanol-burning engines of all sizes. Adds versions of common vehicles (Car, Pickup etc.) for both. (Re)-introduces the Hybrid Car and the Luxury Car from DDA. You'll also be able to create orky jury-rigged engines with access to advanced mechanics books, which will guzzle all your lamp oil. Load AFTER any mods that seriously mess with vehicle placement (such as PK's Rebalance). CONTAINS A TWEAKED VERSION OF CARS TO WRECKS, do not load Cars to Wrecks together with this mod. As of 1.1, also contains new flintlocks.",
-    "category": "content",
-    "dependencies": [ "dda", "aftershock" ]
+    "category": "vehicles",
+    "dependencies": [ "bn", "aftershock" ]
   }
 ]
